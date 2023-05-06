@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Q3</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="box3">
+        <h2>Q3:适度喝酒有益健康?</h2>
+        <h3>A.属实<input type="radio" name="Q3" value="1" id="ans3A"></h3>
+        <h3>B.谣言<input type="radio" name="Q3" value="2" id="ans3B"></h3>
+        <div>
+          <div class="box4">
+              <button onclick="checkAnswer()">提交答案</button>
+          </div>
+          <div class="box5">
+            <button> <a href="q2.html">上一题</a> </button>
+          </div>
+          <div class="box6">
+          <button> <a href="q4.html">下一题</a> </button>
+          </div>
+    </div>
+    <script>
+    function checkAnswer() {
+      var correctAnswer = '2'; // 设置正确答案
+      var userAnswer = document.querySelector('input[name="Q3"]:checked').value;
+      if (userAnswer === correctAnswer) {
+        alert("恭喜你，答对了！酒精是明确的致癌物，且会伤害肝心血管等。完全不喝酒的人，比少量喝酒的人得冠心病。、脑卒中等疾病的概率更低。酒精从摄入开始，就对身体产生了伤害。");
+      } else {
+        alert("很遗憾，要记住这是谣言哦！酒精是明确的致癌物，且会伤害肝心血管等。完全不喝酒的人，比少量喝酒的人得冠心病。、脑卒中等疾病的概率更低。酒精从摄入开始，就对身体产生了伤害。");
+      }
+    }
+    </script>
+  </body>
+</html>
