@@ -1,35 +1,53 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-<head>
-  <title>My first styled page</title>
-  <link rel="stylesheet" href="mystyle.css">
-</head>
-
-<body>
-
-<!-- Site navigation menu -->
-<ul class="navbar">
-  <li><a href="https://www.baidu.com">Home page</a>
-  <li><a href="musings.html">Musings</a>
-  <li><a href="town.html">My town</a>
-  <li><a href="links.html">Links</a>
-</ul>
-
-<!-- Main content -->
-<h1>My first styled page</h1>
-
-<p>Welcome to my styled page!
-
-<p>It lacks images, but at least it has style.
-And it has links, even if they don't go
-anywhere&hellip;
-
-<p>There should be more here, but I don't know
-what yet.
-
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 5 April 2004<br>
-  by myself.</address>
-
-</body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Page1</title>
+    <style>
+    body{
+    background-color: #C4DDE6
+    }
+    .box1{
+      width: 1000px;
+      height:350px;
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      border-radius: 20px;
+    }
+    .box2{
+      width: 800px;
+      height:900px;
+      background-image: url(img1.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+    }
+    h1{
+      text-align: center;
+    }
+    h2{
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <h1 >养生知识小测试 </h1>
+      <h1 >/ Health knowledge test \</h1>
+      <h2><a href="q1.html" >点击开始测试吧！</a></h2>
+     </div>
+    <div class="box2"> </div>
+    <script>
+    var username = prompt("what is your name?")
+    alert('Hello,'+username+',Have a nice day!')
+    </script>
+  </body>
 </html>
